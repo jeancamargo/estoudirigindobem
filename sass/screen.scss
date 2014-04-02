@@ -4,8 +4,29 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/css3/background-clip";
+@import "compass/css3/box-shadow";
 
-h1{
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 48px;
+$font-stack: 'Roboto Condensed', sans-serif;
+$primary-color: #892728;
+$secundary-color: #f9f9f1;
+$third-color: #f0eddc;
+$line-color: #b3b3b5;
+
+body{
+	font: 100% $font-stack;
+	color: black;
+}
+header{
+text-align: center;
+background-color: $primary-color;
+padding: 2%;
+color: white;
+	h1{
+		font-size: 36pt;
+	}
+}
+
+ul.nav {
+  @include horizontal-list;
 }
