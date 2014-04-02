@@ -5,7 +5,6 @@
 
 @import "compass/reset";
 @import "compass/css3/box-shadow";
-@import "compass/typography";
 
 
 $font-stack: 'Roboto Condensed', sans-serif;
@@ -21,13 +20,16 @@ body{
 header{
 text-align: center;
 background-color: $primary-color;
+border-bottom: 2px solid $line-color;
 padding: 2%;
 color: white;
+@include box-shadow(default, 1px 5px 10px $line-color);
 	h1{
 		font-size: 36pt;
 	}
 }
 
-ul.nav {
- // @include horizontal-list;
+nav{
+	padding-top:7px;
+	text-align: center;
 }
