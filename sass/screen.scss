@@ -4,8 +4,9 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
-@import "compass/css3/background-clip";
 @import "compass/css3/box-shadow";
+@import "compass/typography";
+
 
 $font-stack: 'Roboto Condensed', sans-serif;
 $primary-color: #892728;
@@ -28,5 +29,5 @@ color: white;
 }
 
 ul.nav {
-  @include horizontal-list;
+ // @include horizontal-list;
 }
